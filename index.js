@@ -25,24 +25,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-
-];
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
-
-
-// Questions for users to answer to provide details on the README - displayed in the Integrated Terminal 
-inquirer.prompt ([
   {
     type: 'input',
     name:'github',
@@ -55,7 +37,7 @@ inquirer.prompt ([
   },
   {
     type:'input',
-    name:'project',
+    name:'title',
     message:'What is the name of the project?',
   },
   {
@@ -91,11 +73,30 @@ inquirer.prompt ([
     name: 'contribution',
     message: 'What does the use need to know about contributing to the repo?',
   }
-]) .then((answers) => {
-  console.log (answers);
-  console.log ('Generating a README...');
-  fs.writeFile (`README.md`, JSON.stringify(answers, '\t'), (err) => {
+];
+
+// function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile (fileName, data, (err) => {
     console.log ('testing');
   });
-  //push the answers to the array of questions
-})
+}
+
+// function to initialize program
+function init() {
+  inquirer.prompt (questions).then((answers) => {
+    console.log (answers);
+    console.log ('Generating a README...');
+    writeToFile (`README.md`, generateMarkdown(answers));
+  })
+}
+
+// function call to initialize program
+init();
+
+
+// Questions for users to answer to provide details on the README - displayed in the Integrated Terminal 
+
+
+
+// JSON.stringify(answers, null, '\t')
