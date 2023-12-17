@@ -12,6 +12,9 @@ Prompts to ask user:
   9) What does the use need to know about contributing to the repo? 
 - Once all the questions are answered, README file is generated as a separate file 
 - README file displays with the relevant stylings/paragraphs
+- Add in functionality for the github username links to the actual github page 
+- Add in functionality for the Contents pages to be responsive to user's selection and taken to corresponding section 
+- Questions section " If you have any questions about the repo, open an issue or contact me directly at (email). You can find more of my work at (github - link)"
 
 */
 
@@ -90,5 +93,7 @@ inquirer.prompt ([
   }
 ]) .then((answers) => {
   console.log (answers);
+  console.log ('Generating a README...');
+  fs.writeFile (``)
   //push the answers to the array of questions
 })
