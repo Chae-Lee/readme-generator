@@ -94,6 +94,8 @@ inquirer.prompt ([
 ]) .then((answers) => {
   console.log (answers);
   console.log ('Generating a README...');
-  fs.writeFile (``)
+  fs.writeFile (`README.md`, JSON.stringify(answers, '\t'), (err) => {
+    console.log ('testing');
+  });
   //push the answers to the array of questions
 })
