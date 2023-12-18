@@ -24,6 +24,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
+// Questions for users to answer to provide details on the README - displayed in the Integrated Terminal 
 const questions = [
   {
     type: 'input',
@@ -53,7 +54,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'commands',
+    name: 'dependencies',
     message: 'What command should be run to install dependencies?',
     default: 'npm i'
   },
@@ -93,10 +94,6 @@ function init() {
 
 // function call to initialize program
 init();
-
-
-// Questions for users to answer to provide details on the README - displayed in the Integrated Terminal 
-
 
 
 // JSON.stringify(answers, null, '\t')
