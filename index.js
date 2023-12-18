@@ -15,7 +15,6 @@ Prompts to ask user:
 - Add in functionality for the github username links to the actual github page 
 - Add in functionality for the Contents pages to be responsive to user's selection and taken to corresponding section 
 - Questions section " If you have any questions about the repo, open an issue or contact me directly at (email). You can find more of my work at (github - link)"
-
 */
 
 const fs = require("fs");
@@ -23,8 +22,7 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
-// Questions for users to answer to provide details on the README - displayed in the Integrated Terminal 
+// array of questions for user to answer to provide details on the README - displayed in the Integrated Terminal 
 const questions = [
   {
     type: 'input',
@@ -50,7 +48,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message:'Select License (list of options)',
-    choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'None']
+    choices: ['MIT', 'Apache_2.0', 'BSD_3', 'None']
   },
   {
     type: 'input',
@@ -94,6 +92,3 @@ function init() {
 
 // function call to initialize program
 init();
-
-
-// JSON.stringify(answers, null, '\t')
