@@ -1,6 +1,6 @@
-# readme generator
+# README file generator
 ## Description
--  generates a readme 
+-  It creates a README file dynamically
 
 ## Contents
 - [Installation](#installation)
@@ -11,21 +11,23 @@
 - [Questions](#questions)
 
 ## Installation
-- To install dependencies run command npm i
+- To install dependencies run command 
+> npm i
 
 ## Usage
+- Input your answers and you no longer have to manually create and write a README file!
 
 ## License
 - MIT
 
 ## Contributions
-- contributions are welcome. 
+- All suggestions welcome!
 
 ## Tests
-- To run tests, run command npm test
+- To run tests, run command 
+> npm test
+
 
 ## Questions
-- this application can be used on any projects
-If you have any questions about the repo, open an issue or contact me directly at katelee1129@gmail.com. You can find more of my work at Chae-Lee.
-
+- If you have any questions about the repo, open an issue or contact me directly at katelee1129@gmail.com. You can find more of my work at [Chae-Lee](https://github.com/Chae-Lee).
 

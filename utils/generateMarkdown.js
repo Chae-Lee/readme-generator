@@ -13,9 +13,11 @@ function generateMarkdown(data) {
 - [Questions](#questions)
 
 ## Installation
-- To install dependencies run command ${data.dependencies}
+- To install dependencies run command 
+> ${data.dependencies}
 
 ## Usage
+- ${data.questions}
 
 ## License
 - ${data.license}
@@ -24,12 +26,12 @@ function generateMarkdown(data) {
 - ${data.contribution}
 
 ## Tests
-- To run tests, run command ${data.tests}
+- To run tests, run command 
+> ${data.tests}
+
 
 ## Questions
-- ${data.questions}
-If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at ${data.github}.
-
+- If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at [${data.github}](https://github.com/${data.github}).
 
 `;
 }
