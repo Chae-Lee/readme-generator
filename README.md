@@ -30,7 +30,8 @@
 
 
 ## Questions
-- If you have any questions about the repo, open an issue or contact me directly at katelee1129@gmai.com. You can find more of my work at [Chae-Lee](https://github.com/Chae-Lee).
+- If you have any questions about the repo, open an issue or contact me directly at katelee1129@gmail.com. You can find more of my work at [Chae-Lee](https://github.com/Chae-Lee).
 
 ## Walkthrough video
-![README generator walkthrough video](./assets/readme_generator_demonstration.mov)
+[README generator walkthrough video](https://youtu.be/spqW51FhQDo)
+
